@@ -3,7 +3,7 @@ const LOCK_TIMEOUT = 5 * 1000; // 5 seconds
 class HikConnectLockAccessory {
 
   constructor(platform, accessory) {
-    this.accessory = accessory;
+    this.accessory = GarageDoorOpener;
     this.log = platform.log;
     this.platform = platform.api.hap;
     this.device = accessory.context.lock;
